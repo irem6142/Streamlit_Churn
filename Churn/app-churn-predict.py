@@ -4,7 +4,7 @@ import json
 import os
 st.title("Customer Churn Prediction")
 
-# Input fields for the user
+
 age = st.number_input("Age", min_value=18, max_value=100)
 gender = st.selectbox("Gender", ["Male", "Female"])
 tenure = st.number_input("Tenure (months)", min_value=0)
@@ -14,7 +14,7 @@ internet_service = st.selectbox("Internet Service", ["DSL", "Fiber Optic", "None
 tech_support = st.selectbox("Tech Support", ["Yes", "No"])
 total_charges = monthly_charges * tenure
 
-# Prepare the input data for the API
+
 input_data = {
     "input_data": {
         "columns": [
